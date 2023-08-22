@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  background: rgba( 255, 255, 255, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+}
+
+.calculator-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.input-field, button {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow:  20px 20px 60px rgba(0, 0, 0, 0.2), 
+             -20px -20px 60px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 1em;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  color: #FFF;
+}
+
+.input-field {
+  grid-column: span 4;
+  width: 100%;
+  text-align: end;
+}
+
+button:hover {
+  box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.2), 
+             -2px -2px 5px rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+button:active {
+  box-shadow:  2px 2px 2px rgba(0, 0, 0, 0.2), 
+             -2px -2px 2px rgba(255, 255, 255, 0.2);
+  transform: scale(1);
+}
