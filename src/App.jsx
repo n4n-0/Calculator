@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <main className="main-container">
-      <h1>Calculator</h1>
+      {/* <h1>Calculator</h1> */}
       <div className="calculator-container">
         <input type="text" className="input-field" value={input} readOnly />
         <button name="7" onClick={handleClick}>7</button>
